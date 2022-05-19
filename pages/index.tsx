@@ -37,7 +37,7 @@ const Home: NextPage = () => {
       <div
         className={`flex ${
           isMobile
-            ? "w-[100%] margin-auto items-center justify-center flex-col"
+            ? "w-[100%] margin-auto items-center justify-center flex-col bg-[#E2D028]"
             : "w-[50%]"
         } relative`}
       >
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
           Écran LCD LED, verre anti-rayures.
         </h3>
         <h2 className="mt-2 text-opacity-60 text-sm ">Ref. 351GGYx847</h2>
-        <div className="flex flex-row">
+        <div className={isMobile ? "flex flex-col" : "flex flex-row"}>
           <h2
             className={`text-[43px] font-bold text-[${
               watch && watch == "pika" ? "#E2D028" : "#3DA7BA"
@@ -103,7 +103,11 @@ const Home: NextPage = () => {
           >
             24.95 €
           </h2>
-          <h2 className="text-[43px] font-bold text-red-500 mt-5 line-through ml-5">
+          <h2
+            className={`text-[43px] font-bold text-red-500 mt-5 line-through ${
+              isMobile ? "ml-0" : "ml-5"
+            }`}
+          >
             34.95 €
           </h2>
         </div>
