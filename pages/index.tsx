@@ -103,15 +103,14 @@ const Home: NextPage = () => {
           >
             24.95 €
           </h2>
-          <h2 className="text-[43px] font-bold text-red-500 mt-5 line-through ml-5">
+          <h2 className="text-[43px] font-bold text-red-500 mt-5  line-through  ml-5">
             34.95 €
           </h2>
         </div>
-        <h3 className="text-[26px]">Colors</h3>
         <div className="flex flex-row mt-5">
-          <div className="w-6 h-6 rounded-full mr-2 bg-yellow-500"></div>
-          <div className="w-6 h-6 rounded-full mx-2 bg-blue-500"></div>
-          <div className="w-6 h-6 rounded-full mx-2 bg-orange-500"></div>
+          <div className=" border-2 border-gray-400 w-6 h-6 rounded-full mr-2 bg-yellow-500"></div>
+          <div className= "border-2 border-gray-400 w-6 h-6 rounded-full mx-2 bg-blue-500"></div>
+          <div className="border-2 border-gray-400 w-6 h-6 rounded-full mx-2 bg-orange-500"></div>
         </div>
         <h3 className="text-[26px] mt-5">Quantity</h3>
         <QuantityPicker
@@ -122,6 +121,9 @@ const Home: NextPage = () => {
           }}
           smooth
         />
+        <div href="" className="flex my-10 h-10 w-52 rounded-md bg-red-500  opacity-90  items-center justify-center text-white ">
+          <button className="text-center">Acheter mainten</button>
+        </div>
       </div>
     </div>
   );
